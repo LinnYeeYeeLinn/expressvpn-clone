@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express VPN</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+<body class="relative">
+
+    <!-- header -->
+    <header class="w-full sticky top-0 left-0 flex items-center justify-between h-16 xl:px-24 px-4 bg-red-50">
+        <a href="#">
+            <img src="./image/expressvpn-logo-red.svg" width="150" alt="">
+        </a>
+        <nav class="nav">
+            <a class="lg:ml-7 ml-0 hover:text-teal-700" href="#">What is a VPN?</a>
+            <a class="lg:ml-7 ml-0 hover:text-teal-700" href="#">Products</a>
+            <a class="lg:ml-7 ml-0 hover:text-teal-700" href="#">Support</a>
+            <a class="lg:ml-7 ml-0 hover:text-teal-700" href="#">Blog</a>
+            <a class="lg:ml-7 ml-0 hover:text-teal-700" href="#">My Account</a>
+            <a href="#" class="md:px-5 lg:ml-7 ml-0 py-2 rounded-3xl text-center text-teal-700 border border-teal-700 hover:bg-teal-700 hover:text-white">
+                Get Started
+            </a>
+        </nav>
+        <div class="lg:hidden block cursor-pointer openNav">
+            <i class="fa-solid fa-bars fa-lg"></i>
+        </div>
+    </header>
+
+    <!-- hero section -->
+    <section class="bg-red-50" id="home">
+        <div class="xl:px-24 px-4 py-10 flex items-center">
+            <div class="grid lg:grid-cols-2 grid-cols-1 items-center justify-between w-full">
+                <div>
+                    <small class="text-xs text-start"><i class="fa fa-house fa-sm"></i><i class="fa-solid fa-chevron-right fa-sm mx-2 text-gray-700"></i><span class="text-gray-400">VPN Software</span></small>
+                    <div class="md:my-10 my-5">
+                        <h1 class="md:text-5xl text-4xl font-bold">Download a VPN app <br class="xl:block hidden"> on all your devices</h1>
+                        <p class="font-semibold text-xl my-4">
+                            A single subscription covers your computer, <br class="lg:block hidden"> tablet, phone, and more
+                        </p>
+                        <div>
+                            <p class="flex items-center">
+                                <i class="fa-solid fa-check text-teal-700"></i>
+                                <span class="ml-2 text-gray-900">Easy-to-use apps: Set up in just minutes</span>
+                            </p>
+                            <p class="flex items-center my-2">
+                                <i class="fa-solid fa-check text-teal-700"></i>
+                                <span class="ml-2 text-gray-900">Risk-free 30-day money-back guarantee</span>
+                            </p>
+                            <p class="flex items-center">
+                                <i class="fa-solid fa-check text-teal-700"></i>
+                                <span class="ml-2 text-gray-900">Solutions for game consoles and smart TVs</span>
+                            </p>
+                        </div>
+                        <div class="mt-7 flex flex-wrap gap-3">
+                            <a href="#" class="md:px-7 px-5 py-2 rounded-3xl bg-teal-700 text-white hover:bg-transparent hover:text-teal-700 border  hover:border-teal-700">
+                                Get ExpressVPN
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                            <a href="#" class="md:px-7 px-5 py-2 rounded-3xl  text-teal-700 border border-teal-700 hover:bg-teal-700 hover:text-white">
+                                Download Now
+                            </a>
+                        </div>
+                    </div>
+                    <small class="text-xs uppercase text-start tracking-widest "><span class="text-gray-900">Already a customer?</span> <a href="#" class="underline text-teal-700">Start here</a></small>
+                </div>
+                <div class="lg:block hidden">
+                    <img src="./image/hero-img.svg" class="w-4/5 ml-auto" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VPN apps for top devices -->
+    <section>
+        <div class="xl:px-24 px-4 md:py-10 py-7">
+            <h1 class="md:text-4xl text-3xl text-center font-bold">VPN apps for top devices</h1>
+            <div class="grid text-center md:grid-cols-4 grid-cols-2 my-10 lg:gap-5 gap-3">
+                <a href="" class="p-5 hover:shadow-xl shadow-lg rounded-lg">
+                    <img src="./image/windows.avif" alt="">
+                    <p class="uppercase font-bold text-sm">app for windows</p>
+                </a>
+                <a href="" class="p-5 hover:shadow-xl shadow-lg rounded-lg">
+                    <img src="./image/apple.avif" alt="">
+                    <p class="uppercase font-bold text-sm">app for mac</p>
+                </a>
+                <a href="" class="p-5 hover:shadow-xl shadow-lg rounded-lg">
+                    <img src="./image/android.avif" alt="">
+                    <p class="uppercase font-bold text-sm">app for android</p>
+                </a>
+                <a href="" class="p-5 hover:shadow-xl shadow-lg rounded-lg">
+                    <img src="./image/ios.avif" alt="">
+                    <p class="uppercase font-bold text-sm">app for ios</p>
+                </a>
+                <a href="" class="p-5 hover:shadow-xl shadow-lg rounded-lg">
+                    <img src="./image/linux.avif" alt="">
+                    <p class="uppercase font-bold text-sm">app for linux</p>
+                </a>
+                <a href="" class="p-5 hover:shadow-xl shadow-lg rounded-lg">
+                    <img src="./image/routers.avif" alt="">
+                    <p class="uppercase font-bold text-sm">app for routers</p>
+                </a>
+                <a href="" class="p-5 hover:shadow-xl shadow-lg rounded-lg">
+                    <img src="./image/chromebook.avif" alt="">
+                    <p class="uppercase font-bold text-sm">app for chromebook</p>
+                </a>
+                <a href="" class="p-5 hover:shadow-xl shadow-lg rounded-lg">
+                    <img src="./image/kindle-fire.avif" alt="">
+                    <p class="uppercase font-bold text-sm">app for kindle fire</p>
+                </a>
+            </div>
+            <p class="text-center">
+                Find out more about using ExpressVPN 
+                <a href="#" class="text-teal-700 underline">on your phone</a> and on 
+                <a href="#" class="text-teal-700 underline">
+                    smart home 
+                <br class="lg:block hidden">
+                (IoT) devices.</a>
+            </p>
+        </div>
+    </section>
+    
+    <!-- VPN extensions for browsers -->
+    <section>
+        <div class="xl:px-24 px-4 md:py-10 py-7">
+            <h1 class="md:text-4xl text-3xl text-center font-bold">VPN extensions for browsers</h1>
+            <div class="grid md:grid-cols-3 my-10 lg:gap-5 gap-3 text-center lg:mx-32 md:mx-16">
+                <a href="#" class="p-5 hover:shadow-xl shadow-lg rounded-lg">
+                    <img src="./image/chrome-logo.avif" alt="">
+                    <p class="uppercase font-bold text-sm">vpn for chrome</p>
+                </a>
+                <a href="#" class="p-5 hover:shadow-xl shadow-lg rounded-lg">
+                    <img src="./image/firefox-logo.avif" alt="">
+                    <p class="uppercase font-bold text-sm">vpn for firebox</p>
+                </a>
+                <a href="#" class="p-5 hover:shadow-xl shadow-lg rounded-lg">
+                    <img src="./image/edge-logo.avif" alt="">
+                    <p class="uppercase font-bold text-sm">VPN for edge</p>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ExpressVPN for smart TV systems -->
+    <section>
+        <div class="xl:px-24 px-4 md:py-10 py-7">
+            <h1 class="md:text-4xl text-3xl text-center font-bold">ExpressVPN for smart TV systems</h1>
+            <div class="grid text-center md:grid-cols-4 grid-cols-2 sm:grid-cols-1 my-10 lg:gap-5 gap-3">
+                <a href="" class="p-5 hover:shadow-xl shadow-lg rounded-lg">
+                    <img src="./image/vpn-for-all-smart-tvs.avif" alt="">
+                    <p class="uppercase font-bold text-sm">smart tvs</p>
+                </a>
+                <a href="" class="p-5 hover:shadow-xl shadow-lg rounded-lg">
+                    <img src="./image/vpn-for-apple-tv.avif" alt="">
+                    <p class="uppercase font-bold text-sm">apple tv</p>
+                </a>
+                <a href="" class="p-5 hover:shadow-xl shadow-lg rounded-lg">
+                    <img src="./image/vpn-for-amazon-fire-tv.avif" alt="">
+                    <p class="uppercase font-bold text-sm">amazon fire tv</p>
+                </a>
+                <a href="" class="p-5 hover:shadow-xl shadow-lg rounded-lg">
+                    <img src="./image/vpn-for-samsung-smart-tv.avif" alt="">
+                    <p class="uppercase font-bold text-sm">samsaung smart tv</p>
+                </a>
+                <a href="" class="p-5 hover:shadow-xl shadow-lg rounded-lg">
+                    <img src="./image/vpn-for-roku.avif" alt="">
+                    <p class="uppercase font-bold text-sm">roku</p>
+                </a>
+                <a href="" class="p-5 hover:shadow-xl shadow-lg rounded-lg">
+                    <img src="./image/vpn-for-chromecast.avif" alt="">
+                    <p class="uppercase font-bold text-sm">chromecast</p>
+                </a>
+                <a href="" class="p-5 hover:shadow-xl shadow-lg rounded-lg">
+                    <img src="./image/vpn-for-nvidia-shield.avif" alt="">
+                    <p class="uppercase font-bold text-sm">nvidia shield</p>
+                </a>
+                <a href="" class="p-5 hover:shadow-xl shadow-lg rounded-lg">
+                    <img src="./image/vpn-for-android.avif" alt="">
+                    <p class="uppercase font-bold text-sm">android tv</p>
+                </a>
+            </div>
+            <p class="text-center">
+                Check out
+                <a href="#" class="text-teal-700 underline">
+                    all the ways to get ExpressVPN on your TV.
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <!-- ExpressVPN for game consoles -->
+    <section>
+        <div class="xl:px-24 px-4 md:py-10 py-7">
+            <h1 class="md:text-4xl text-3xl text-center font-bold">ExpressVPN for game consoles</h1>
+            <div class="grid text-center md:grid-cols-4 grid-cols-2 sm:grid-cols-1 my-10 lg:gap-5 gap-3">
+                <a href="" class="p-5 hover:shadow-xl shadow-lg rounded-lg">
+                    <img src="./image/vpn-for-all-game-consoles.avif" alt="">
+                    <p class="uppercase font-bold text-sm">game consoles</p>
+                </a>
+                <a href="" class="p-5 hover:shadow-xl shadow-lg rounded-lg">
+                    <img src="./image/vpn-for-playstation.avif" alt="">
+                    <p class="uppercase font-bold text-sm">playstation</p>
+                </a>
+                <a href="" class="p-5 hover:shadow-xl shadow-lg rounded-lg">
+                    <img src="./image/vpn-for-xbox.avif" alt="">
+                    <p class="uppercase font-bold text-sm">xbox</p>
+                </a>
+                <a href="" class="p-5 hover:shadow-xl shadow-lg rounded-lg">
+                    <img src="./image/vpn-for-nintendo-switch.avif" alt="">
+                    <p class="uppercase font-bold text-sm">nintendo switch</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- VPN extensions for browsers steps -->
+    <section>
+        <div class="xl:px-24 px-4 md:py-10 py-7">
+            <h1 class="md:text-4xl text-3xl text-center font-bold">VPN extensions for browsers</h1>
+            <div class="grid text-center md:grid-cols-3 grid-cols-1 my-10 lg:gap-5 gap-3 md:mx-10">
+                <div href="#" class="p-5 hover:shadow-xl cursor-pointer shadow-lg rounded-lg">
+                    <h3 class="text-2xl font-semibold">Step 1</h3>
+                    <img src="./image/get-expressvpn-now_3x.avif" alt="" class="my-5">
+                    <p class="text-sm"><a href="" class="text-teal-700 underline">Get ExpressVPN</a>
+                    </p>
+                </div>
+                <div href="#" class="p-5 hover:shadow-xl cursor-pointer shadow-lg rounded-lg">
+                    <h3 class="text-2xl font-semibold">Step 2</h3>
+                    <img src="./image/setup.avif" alt="" class="my-5">
+                    <p class="text-sm">Visit the <a href="#" class="underline text-teal-700">setup page.</a>
+                    </p>
+                </div>
+                <div href="#" class="p-5 hover:shadow-xl cursor-pointer shadow-lg rounded-lg">
+                    <h3 class="text-2xl font-semibold">Step 3</h3>
+                    <img src="./image/devices-green-shield__1_.avif" alt="" class="my-5">
+                    <p class="text-sm">Download and install the app.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- get expressvpn cta -->
+    <section class="flex justify-center">
+        <a href="#" class="md:px-7 px-5 py-2 rounded-3xl bg-teal-700 text-white hover:bg-transparent hover:text-teal-700 border  hover:border-teal-700">
+            Get ExpressVPN
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </section>
+
+    
+    <section class="text-center md:mt-14 mt-5">
+        <div class="xl:px-24 px-4 md:py-10 py-7">
+            <h1 class="md:text-4xl text-3xl text-center font-bold">
+                What do you get with <br class="md:block hidden">ExpressVPN software?
+            </h1>
+            <p class="text-gray-500 mt-4">Each VPN app comes with:</p>
+        </div>
+    </section>
+
+    <!-- encryption -->
+    <section>
+        <div class="xl:px-24 px-4 md:py-10 py-7 flex items-center">
+            <div class="grid md:grid-cols-2 grid-cols-1 items-center lg:mx-24 mx-0 md:gap-0 gap-3">
+                <div class="flex md:justify-start justify-center">
+                    <img src="./image/encryption.avif" class="w-4/5" alt="">
+                </div>
+                <div class="">
+                    <h1 class="md:text-3xl text-2xl font-semibold">
+                        Best-in-class 256-bit <br class="lg:block hidden"> encryption
+                    </h1>
+                    <p class="md:w-11/12 w-auto mt-3">
+                        With ExpressVPN software, you can direct all of your internet traffic through an <a href="" class="underline text-teal-700">encrypted tunnel that protects it from attackers.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Unlimited bandwidth -->
+    <section>
+        <div class="xl:px-24 px-4 md:py-10 py-7 flex items-center">
+            <div class="grid md:grid-cols-2 grid-cols-1 items-center lg:mx-14 mx-0 md:gap-0 gap-3">
+                <div class="">
+                    <h1 class="md:text-3xl text-2xl font-semibold">
+                        Unlimited bandwidth
+                    </h1>
+                    <p class="md:w-5/6 w-auto mt-3">
+                        Watch all the streaming video you want and video chat with friends to your heart's content. ExpressVPN software <a href="" class="text-teal-700 underline">never caps your bandwidth.</a>
+                    </p>
+                </div>
+                <div class="flex md:justify-start justify-center">
+                    <img src="./image/streaming-services-on-tablet-and-laptop.avif" class="w-4/5" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- 5-star customer support -->
+    <section>
+        <div class="xl:px-24 px-4 md:py-10 py-7 flex items-center">
+            <div class="grid md:grid-cols-2 grid-cols-1 items-center lg:mx-24 mx-0 md:gap-0 gap-3">
+                <div class="flex md:justify-start justify-center">
+                    <img src="./image/star-customer-support-opt2.avif" class="w-4/5" alt="">
+                </div>
+                <div class="">
+                    <h1 class="md:text-3xl text-2xl font-semibold">
+                        5-star customer support
+                    </h1>
+                    <p class="md:w-10/12 w-auto mt-3">
+                        If you ever have questions about any ExpressVPN app, <a href="" class="underline text-teal-700">contact the award-winning ExpressVPN Support Team</a> via live chat or email anytime.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 30-day money-back guarantee -->
+    <section>
+        <div class="xl:px-24 px-4 md:py-10 py-7 flex items-center">
+            <div class="grid md:grid-cols-2 grid-cols-1 items-center lg:mx-14 mx-0 md:gap-0 gap-3">
+                <div class="">
+                    <h1 class="md:text-3xl text-2xl font-semibold">
+                        30-day money-back guarantee
+                    </h1>
+                    <p class="md:w-5/6 w-auto mt-3">
+                        If you're not fully satisfied with ExpressVPN in the first 30 days, take advantage of our <a href="" class="text-teal-700 underline">money-back guarantee</a> and get a full refund.
+                    </p>
+                </div>
+                <div class="flex md:justify-start justify-center">
+                    <img src="./image/30-day-money-back-badge-berrysand-opt.avif" class="w-4/5" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- get expressvpn cta -->
+    <section class="flex justify-center">
+        <a href="#" class="md:px-7 px-5 py-2 rounded-3xl bg-teal-700 text-white hover:bg-transparent hover:text-teal-700 border  hover:border-teal-700">
+            Get ExpressVPN
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
+    </section>
+
+    <!-- fAQ section -->
+    <section>
+        <div class="xl:px-24 px-4 md:py-10 py-7">
+            <h1 class="md:text-4xl text-3xl text-center font-bold">
+                Frequently asked <br class="md:block hidden">questions
+            </h1>
+            <div class="mt-10 lg:w-1/2 md:w-3/5 mx-auto">
+                <div class="accordion-btn font-bold flex justify-between items-center py-2 cursor-pointer">
+                    <p>How do I get a VPN?</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="panel hidden text-gray-600 my-4">
+                    <p class="">Getting a VPN app is hassle-free! Install ExpressVPN on your Windows, iOS, Android, Mac, or route, and enjoy a safe, secure, encrypted online experience.</p>
+                    <ul class="p-3">
+                        <li class="my-1">
+                            <span class="mr-2">1.</span>
+                            <a href="" class="underline text-teal-700">
+                                Get ExpressVPN
+                            </a>
+                        </li>
+                        <li class="my-1">
+                            <span class="mr-2">2.</span>
+                            Download the app for iOS, Android, PC, Mac, Linux, or routes.
+                        </li>
+                        <li class="my-1">
+                            <span class="mr-2">3.</span>
+                            Follow the instructions to <a href="" class="underline text-teal-700">set up ExpressVPN</a>
+                            on your device.
+                        </li>
+                        <li class="my-1">
+                            <span class="mr-2">4.</span>
+                            Connect with a click to enjoy the internet privately and securely.
+                        </li>
+                    </ul>
+                </div>
+                <hr class="my-3">
+
+                <div class="accordion-btn font-bold flex justify-between items-center py-2 cursor-pointer">
+                    <p>Can I download a VPN free?</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="panel hidden text-gray-600 my-4">
+                    <p class="">
+                        If you'd like to try ExpressVPN risk-free, just sign up. If you're not satisfied for any reason in the first 30 days, you can take advantage of our <a href="" class="text-teal-700 underline">money-back guarantee</a> and get a full refund.
+                    </p>
+                    <p class="my-3">
+                        ExpressVPN takes your privacy seriously, giving you speed, advanced features, and customer support you just can't find in a free VPN. To ensure a fast, private, and secure connection for everyone, we invest in high-performance server locations all over the world, trained support agents available via <a href="" class="underline text-teal-700">24/7 live chat</a>, and skilled engineers who create, maintain, and constantly optimize our apps and network.
+                    </p>
+                    <a href="" class="underline text-teal-700">
+                        Read more about the benefits of paid vs free VPNs.
+                    </a>
+                </div>
+                <hr class="my-3">
+
+                <div class="accordion-btn font-bold flex justify-between items-center py-2 cursor-pointer">
+                    <p>Are VPNs legal?</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="panel hidden text-gray-600 my-4">
+                    <p>
+                        VPNs are legal in the vast majority of jurisdictions around the world and are widely used by individuals and companies to protect their data, including in countries with highly restrictive governments. Even where VPNs might be seen as discouraged, many governments tacitly endorse their use by officials, academics, or businesses to stay competitive in an interconnected world. It is simply not practical for countries to ban all VPNs.
+                    </p>
+                    <p class="mt-3">
+                        Of course, illegal online activity is always illegal, whether you are using a VPN or not.
+                    </p>
+                </div>
+                <hr class="my-3">
+
+                <div class="accordion-btn font-bold flex justify-between items-center py-2 cursor-pointer">
+                    <p>Do I need a VPN on my phone, or just my computer?</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="panel hidden text-gray-600 my-4">
+                    <p>
+                        As more and more digital activity—including banking, browsing, and messaging—happens on mobile devices, it becomes increasingly essential to use a VPN to protect your data, especially when using <a href="" class="text-teal-700 underline">public Wi-Fi</a>. And people who like to stream video and music on their mobile devices will appreciate having all the same entertainment options on the go that they enjoy with a VPN at home.
+                    </p>
+                </div>
+                <hr class="my-3">
+
+                <div class="accordion-btn font-bold flex justify-between items-center py-2 cursor-pointer">
+                    <p>Should I use a VPN all the time?</p>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="panel hidden text-gray-600 my-4">
+                    <p>
+                        We recommend that you connect to the VPN every time you go online to keep your data and browsing activity private and secure from your internet service provider, Wi-Fi operator, and others. A VPN scrambles your traffic in an encrypted tunnel so not even your ISP can read it, and it also lets you <a href="" class="underline text-teal-700">change your IP address</a>, which prevents your real address from being used to identify, track, or locate you.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- version section -->
+    <section>
+        <div class="xl:px-24 px-4 md:py-10 py-7">
+            <h1 class="md:text-4xl text-3xl text-center font-bold">
+                Current app versions
+            </h1>
+            <div class="grid md:grid-cols-2 grid-cols-1 lg:w-1/2 md:w-3/5 w-auto mx-auto mt-10 md:gap-8 gap-0">
+                <div>
+                    <div class="flex items-center justify-between cursor-pointer">
+                        <p>
+                            ExpressVPN for Windows
+                        </p>
+                        <i class="fa-solid fa-chevron-right text-gray-500"></i>
+                    </div>
+                    <hr class="my-3">
+                    <div class="flex items-center justify-between cursor-pointer">
+                        <p>
+                            ExpressVPN for Mac
+                        </p>
+                        <i class="fa-solid fa-chevron-right text-gray-500"></i>
+                    </div>
+                    <hr class="my-3">
+                    <div class="flex items-center justify-between cursor-pointer">
+                        <p>
+                            ExpressVPN for Linux
+                        </p>
+                        <i class="fa-solid fa-chevron-right text-gray-500"></i>
+                    </div>
+                    <hr class="my-3">
+                </div>
+                <div>
+                    <div class="flex items-center justify-between cursor-pointer">
+                        <p>
+                            ExpressVPN for Android
+                        </p>
+                        <i class="fa-solid fa-chevron-right text-gray-500"></i>
+                    </div>
+                    <hr class="my-3">
+                    <div class="flex items-center justify-between cursor-pointer">
+                        <p>
+                            ExpressVPN for iOS
+                        </p>
+                        <i class="fa-solid fa-chevron-right text-gray-500"></i>
+                    </div>
+                    <hr class="my-3">
+                    <div class="flex items-center justify-between cursor-pointer">
+                        <p>
+                            ExpressVPN for routers
+                        </p>
+                        <i class="fa-solid fa-chevron-right text-gray-500"></i>
+                    </div>
+                    <hr class="my-3">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-white bg-teal-900">
+        <div class="xl:px-24 px-4 md:py-10 py-7">
+            <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-0 gap-5">
+                <div>
+                    <h3 class="font-bold mb-3">Products</h3>
+                    <nav class="flex flex-col">
+                        <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">Aircove</a>
+                        <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">Mac VPN</a>
+                        <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">VPN for PC</a>
+                        <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">iPhone VPN</a>
+                        <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">Android VPN</a>
+                        <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">Linux VPN</a>
+                        <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">Router VPN</a>
+                        <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">VPN Chrome Extension</a>
+                        <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">VPN Firefox Extension</a>
+                        <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">VPN Edge Extension</a>
+                        <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">VPN Server Locations</a>
+                        <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">Lightway VPN Protocol</a>
+                        <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">Buy VPN</a>
+                        <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">Black Friday VPN</a>
+                    </nav>
+                </div>
+                <div class="flex flex-col gap-5">
+                    <div>
+                        <h3 class="font-bold mb-3">Learn More</h3>
+                        <nav class="flex flex-col">
+                            <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">What Is a VPN?</a>
+                            <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">Top 5 VPN Uses</a>
+                            <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">How-To Privacy Guides</a>
+                            <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">Blog</a>
+                            <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">Digital Security Lab</a>
+                        </nav>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-3">Tools</h3>
+                        <nav class="flex flex-col">
+                            <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">What Is My IP?</a>
+                            <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">DNS Leak Test</a>
+                            <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">WebRTC Leak Test</a>
+                            <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">Password Generator</a>
+                            <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">Log4j Vulnerability (VPN Protection)</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="flex flex-col gap-5">
+                    <div>
+                        <h3 class="font-bold mb-3">About ExpressVPN</h3>
+                        <nav class="flex flex-col">
+                            <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">About Us</a>
+                            <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">Plans and Pricing</a>
+                            <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">Features</a>
+                            <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">Risk-Free VPN Trial</a>
+                            <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">ExpressVPN Reviews</a>
+                            <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">Press</a>
+                            <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">Careers</a>
+                            <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">Privacy Policy</a>
+                            <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">Trust</a>
+                        </nav>
+                    </div>
+                    <div>
+                        <h3 class="font-bold mb-3">Programs</h3>
+                        <nav class="flex flex-col">
+                            <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">Refer a Friend</a>
+                            <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">Affiliates</a>
+                            <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">Influencers</a>
+                            <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">Partners</a>
+                            <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">$5,000 Scholarship</a>
+                        </nav>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-bold mb-3">Help</h3>
+                    <nav class="flex flex-col">
+                        <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">Support Center</a>
+                        <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">VPN Setup Tutorials</a>
+                        <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">FAQ</a>
+                        <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">Terms of Service</a>
+                        <a class="text-gray-300 mb-1 hover:text-yellow-400" href="#">Contact Us</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="py-7 bg-teal-800">
+            <div class="xl:px-24 px-4 flex flex-wrap items-center justify-between ">
+                <p class="text-sm md:mb-0 mb-3">© 2022 ExpressVPN. All rights reserved.</p>
+                <div>
+                    <a class="md:ml-3 mr-3" href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a class="md:ml-3 mr-3" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a class="md:ml-3 mr-3" href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a class="md:ml-3 mr-3" href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a class="md:ml-3 mr-3" href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="arrowUp">
+        <a href="#home"><i class="fa-solid fa-arrow-up"></i></a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
